@@ -10,7 +10,7 @@ export const fetchImages = async (topic, currentPage) => {
             params: {
                 query: topic,
                 page: currentPage,
-                per_page: 10,
+            per_page: 10,
             },
             headers: {
                 Authorization: `Client-ID ${ACCESS_KEY}`,

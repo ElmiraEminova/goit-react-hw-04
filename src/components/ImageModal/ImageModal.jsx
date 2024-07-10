@@ -8,7 +8,6 @@ export default function ImageModal({ isOpen, onRequestClose, image }) {
             isOpen={isOpen}
             onRequestClose={onRequestClose}
             contentLabel="Image Modal"
-            overlayClassName="overlay"
             shouldCloseOnEsc={true}
             shouldCloseOnOverlayClick={true}
         >
