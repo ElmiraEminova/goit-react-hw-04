@@ -10,14 +10,14 @@ export const fetchImages = async (topic, currentPage) => {
             params: {
                 query: topic,
                 page: currentPage,
-            per_page: 10,
+                per_page: 12,
             },
             headers: {
                 Authorization: `Client-ID ${ACCESS_KEY}`,
             },
         });
         console.log(res.data);
-        return res.data.results
+        return res.data
     } catch (error) {
         console.error('Error fetching images:', error);
         throw error;

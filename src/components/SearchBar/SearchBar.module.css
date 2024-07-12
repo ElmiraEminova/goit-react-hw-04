@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.formik {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+}
+
+.field {
+  box-sizing: border-box;
+  width: 300px;
+  height: 40px;
+  padding: 5px;
+  font-size: 16px;
+  border: 2px solid black;
+  border-radius: 3px;
+}
+
+.button {
+  cursor: pointer;
+  width: 80px;
+  height: 40px;
+  font-size: 16px;
+  color: antiquewhite;
+  background-color: #201212;
+  border-radius: 3px;
+}

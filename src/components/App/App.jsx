@@ -6,6 +6,7 @@ import { fetchImages } from "../../photo-api";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
 import LoadMoreBtn from "../LoadMoreBtn/LoadMoreBtn";
 import ImageModal from "../ImageModal/ImageModal";
+import css from "./App.module.css"
 
 export default function App() {
     const [photos, setPhotos] = useState([]);
@@ -61,7 +62,7 @@ export default function App() {
     };
 
     return (
-        <div>
+        <div className={css.container}>
             <SearchBar onSearch={handleSearch} />
             {loading && <Loader />}
             {error && <ErrorMessage />}
